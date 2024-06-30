@@ -4,6 +4,8 @@
 
 int	main(void)
 {
+	int b;
+	int a;
 	ft_printf("--------------|%%P FLAG|--------------\n");
 	   printf("OG    (empty): %p                     \n", (void *)"");
 	ft_printf("|     (empty): %p                     \n", (void *)"");
@@ -75,28 +77,34 @@ int	main(void)
 
 	ft_printf("--------------|%%x FLAG|--------------\n");
 	
-	ft_printf("|       UIMAX: %x                     \n",  2019496700);
-	   printf("OG      UIMAX: %x                     \n",  2019496700);
+	a = ft_printf("|       UIMAX: %x                     \n",  2019496700);
+	b =    printf("OG      UIMAX: %x                     \n",  2019496700);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	ft_printf("|       ULMAX: %x                     \n", ULONG_MAX);
 	   printf("OG      ULMAX: %x                     \n", ULONG_MAX);
-	ft_printf("|    LONG_MIN: %x                     \n", LONG_MIN);
-	   printf("OG   LONG_MIN: %x                     \n", LONG_MIN);
+	a = ft_printf("|    LONG_MIN: %x                     \n", LONG_MIN);
+	b =    printf("OG   LONG_MIN: %x                     \n", LONG_MIN);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	ft_printf("|    LONG_MAX: %x                     \n", LONG_MAX);
 	   printf("OG   LONG_MAX: %x                     \n", LONG_MAX);
-	ft_printf("|        -val: %x                    \n", -14523);
-	   printf("OG       -val: %x                    \n", -14523);
-	ft_printf("|          -1: %x                     \n", -1);
-	   printf("OG         -1: %x                     \n", -1);
+	a = ft_printf("|        -val: %x                    \n", -14523);
+	b =    printf("OG       -val: %x                    \n", -14523);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	a = ft_printf("|          -1: %x                     \n", -1);
+	b =    printf("OG         -1: %x                     \n", -1);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	ft_printf("|          42: %x                     \n", 42);
 	   printf("OG         42: %x                     \n", 42);
 	ft_printf("|         -42: %x                     \n", -42);
 	   printf("OG        -42: %x                     \n", -42);
     	ft_printf("--------------|%%X FLAG|--------------\n");
 	
-	ft_printf("|        LMAX: %X                     \n", UINT_MAX);
-	   printf("OG       LMAX: %X                     \n", UINT_MAX);
-	ft_printf("|        -val: %X                    \n", -14523);
-	   printf("OG       -val: %X                    \n", -14523);
+	a = ft_printf("|        LMAX: %X                     \n", UINT_MAX);
+	b =    printf("OG       LMAX: %X                     \n", UINT_MAX);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	a = ft_printf("|        -val: %X                    \n", -14523);
+	b =    printf("OG       -val: %X                    \n", -14523);
+	printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	ft_printf("|           1: %X                     \n",1);
 	   printf("OG          1: %X                     \n", 1);
 	ft_printf("|          42: %X                     \n", 42);
@@ -106,20 +114,30 @@ int	main(void)
 
 	// ft_printf("%");
 	//    printf("%");
-	//int b;
-	//int a;
+
 	//b =    printf("coucou %s coucou \n", "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU");
+	// printf("\n------------\n");
 	//a = ft_printf("coucou %s coucou \n", "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU");
+	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	// printf("\n__________NEXT TEST_________\n");
 	//a = ft_printf("?a^X%c/7}(}fV77%sPVT\r3RbRw%cqUsICC%XKX4j&U%s{D?%%/$M", 0, "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU", -1544082211, 48713326, "nE*Iz0.}yZvi*hV%\r8c\t KA_LxEM2kOaT$|{arV|Kfp) s8xhX1riEXrm{CU\f?\"\vv\rH0%2U60Nq^t]e");
 	// printf("\n------------\n");
 	//b =    printf("?a^X%c/7}(}fV77%sPVT\r3RbRw%cqUsICC%XKX4j&U%s{D?%%/$M", 0, "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU", -1544082211, 48713326, "nE*Iz0.}yZvi*hV%\r8c\t KA_LxEM2kOaT$|{arV|Kfp) s8xhX1riEXrm{CU\f?\"\vv\rH0%2U60Nq^t]e");
+	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	// printf("\n__________NEXT TEST_________\n");
 	//a = ft_printf("%%%w%%%r%%%y%%%k%%%%%%z%%%%%%%%%%h%%%%%k%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+	// printf("\n------------\n");
 	//b =    printf("%%%w%%%r%%%y%%%k%%%%%%z%%%%%%%%%%h%%%%%k%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	// printf("\n__________NEXT TEST_________\n");
 	//a = ft_printf ("M = %c %c %c aaaaaaaaaaaaaa c%s %i s\n", '1', 0, '0', "coucou          wkuycfgliecf", 548);
+	// printf("\n------------\n");
 	//b =    printf ("O = %c %c %c aaaaaaaaaaaaaa c%s %i s\n", '1', 0, '0', "coucou          wkuycfgliecf", 548);
+	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
+	// printf("\n__________NEXT TEST_________\n");
 	//a = ft_printf("%%|%c|%%|%s|%%|%d|%%|%i|%%|%u|%%|%x|%%|%X|%%|%%| %%|%c|%%|%s|%%|%d|%%|%i|%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
-	//ft_printf("\n");
+	// printf("\n------------\n");
 	//b =    printf("%%|%c|%%|%s|%%|%d|%%|%i|%%|%u|%%|%x|%%|%X|%%|%%| %%|%c|%%|%s|%%|%d|%%|%i|%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
-	//printf ("o %i = m %i\n", b, a);
+	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	//return (0);
 }
