@@ -123,6 +123,7 @@ int	main(void)
 	//a = ft_printf("?a^X%c/7}(}fV77%sPVT\r3RbRw%cqUsICC%XKX4j&U%s{D?%%/$M", 0, "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU", -1544082211, 48713326, "nE*Iz0.}yZvi*hV%\r8c\t KA_LxEM2kOaT$|{arV|Kfp) s8xhX1riEXrm{CU\f?\"\vv\rH0%2U60Nq^t]e");
 	// printf("\n------------\n");
 	//b =    printf("?a^X%c/7}(}fV77%sPVT\r3RbRw%cqUsICC%XKX4j&U%s{D?%%/$M", 0, "k l&NXtF`}GJG,$EFOH$][w\n 37kbNJyv\v-cp=0aJ.ncZ0z541ZCd/ JqXh&l>9.,l7iMv Rbwn:#[>*x5<\trU", -1544082211, 48713326, "nE*Iz0.}yZvi*hV%\r8c\t KA_LxEM2kOaT$|{arV|Kfp) s8xhX1riEXrm{CU\f?\"\vv\rH0%2U60Nq^t]e");
+	printf("\n");
 	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	// printf("\n__________NEXT TEST_________\n");
 	//a = ft_printf("%%%w%%%r%%%y%%%k%%%%%%z%%%%%%%%%%h%%%%%k%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
@@ -138,6 +139,7 @@ int	main(void)
 	//a = ft_printf("%%|%c|%%|%s|%%|%d|%%|%i|%%|%u|%%|%x|%%|%X|%%|%%| %%|%c|%%|%s|%%|%d|%%|%i|%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
 	// printf("\n------------\n");
 	//b =    printf("%%|%c|%%|%s|%%|%d|%%|%i|%%|%u|%%|%x|%%|%X|%%|%%| %%|%c|%%|%s|%%|%d|%%|%i|%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
+	printf("\n");
 	//printf ("Original\t>>>\t%i\nYours\t>>>>\t%i\n", b, a);
 	//return (0);
 }
